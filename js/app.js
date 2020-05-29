@@ -88,15 +88,17 @@ gameMain.prototype = {
             try{
                 StatusBar.hide();
             } catch(e){}   
-        }, 1000);
-        
-		setTimeout(function(){
+	        
 	        try{
 	            window.plugins.insomnia.keepAwake();
 	        } catch(e){}
         }, 1000);
         
-        navigator.compass.watchHeading(compassSuccess, compassError);
+		try{
+			window.addEventListener("deviceorientation", compassSuccess, true);
+        } catch(e){ 
+        	navigator.compass.watchHeading(compassSuccess, compassError); 
+        }   
         
         initAd();
     }
@@ -267,7 +269,7 @@ function showIntersitital(chance){
 }
 
 function compassSuccess(heading) {
-    var head = heading.magneticHeading;
+    var head = 360 - (Math.round(heading.alpha));
     if (head == 0) head = 360;
     var note = Math.round(head / divisions[division]);
 
