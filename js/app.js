@@ -17,21 +17,12 @@ var gameMain = function(game){
 	vibratos = [0, 3, 5, 8];
 	divisions = [30, 36, 45, 60];
 	
-	/*division = 0;
+	division = 0;
 	vibrato = 2;
     scale = 1;
     wave = 0;
     attack = 1;
-    release = 2;*/
-    
-    // for show
-    
-	division = 1;
-	vibrato = 2;
-    scale = 1;
-    wave = 2;
-    attack = 0;
-    release = 1;
+    release = 2;
 
     var acceY, note;
 };
