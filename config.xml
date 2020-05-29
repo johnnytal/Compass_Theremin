@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-	<widget id="cocoon.ilyich.compassTheremin" version="1.8" android-versionCode="1700044" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+	<widget id="cocoon.ilyich.compassTheremin" version="1.9" android-versionCode="1700045" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
 		<name>Compass Theremin</name>
 		<description>Compass Theremin instrument</description>
 		<author email="johnnytal9@gmail.com" href="http://www.ilyichgames.com"> Johnny Tal </author>
